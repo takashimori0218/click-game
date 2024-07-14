@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* グラデーション背景 */
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  margin-right: 50px;
+}
+
+#playerName {
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#clickButton {
+  padding: 40px 60px;
+  font-size: 28px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
+
+#clickButton.clicked {
+  transform: scale(1.1);
+}
+
+#startButton {
+  padding: 30px 50px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#score, #timer, #highScore {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+#memoryBarContainer {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 300px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#memoryBar {
+  width: 100%;
+  height: 0;
+  background-color: #76c7c0;
+  position: absolute;
+  bottom: 0;
+}
+
+#rankingContainer {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rankingList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

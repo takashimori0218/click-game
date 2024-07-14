@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリックゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>クリックして得点を稼ごう！</h1>
+        <div id="score">得点: 0</div>
+        <input type="text" id="playerName" placeholder="名前を入力" />
+        <button id="clickButton" disabled>クリック！</button>
+        <button id="startButton">スタート</button>
+    </div>
+    <div id="memoryBarContainer">
+        <div id="memoryBar"></div>
+    </div>
+    <div id="rankingContainer">
+        <h2>ランキング</h2>
+        <ul id="rankingList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
